@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    background: black;
+    padding-left: 15%;
+}
+.logo {
+    width: 291px;
+    height: 32px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    
+}
+ul .nav-link{
+    color: white;
+
+}
+.bannier{
+    width: 100%;
+    height: 841px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/banniere.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInMove 3.5s ease forwards;
+}
+
+@keyframes fadeInMove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sec-about{
+    width: 100%;
+    height: 741px;
+    background: #F2F6F9;
+    margin-top: 100px;
+}
+.les-box{
+    margin: 0% 10% 0% 10%;
+}
+#sec1{
+    display: none;
+    transition: ease 0.5s;
+    transform: translateY(100px);
+    animation: secMove 0.5s ease forwards;
+    opacity: 0;
+    
+}
+@keyframes secMove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#sec2, #sec3{
+    opacity: 0;
+    transition: 0.9s;
+    transform: translateY(70px);
+    animation: secondMove ease 0.9s forwards;
+    margin-bottom: 100px;
+}
+@keyframes secondMove{
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.box1 .image{
+    width: 350px;
+    height: 250px;
+}
+.box1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-body{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+   margin-left: 2%;
+    position: absolute;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.box2{
+    height: 200px;
+}
+.image-container{
+    width: 100%;
+    height: 100%;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rectangle-image{
+    width: 847px;
+    height: 673px;
+}
+.rectangle-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#sec4{
+    display: none;
+    opacity: 0;
+    transition: ease 0.9s ;
+    transform: translateY(80px);
+    animation: thirtyMoove ease 0.9s forwards;
+}
+@keyframes thirtyMoove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#sec5{
+    display: none;
+    opacity: 0;
+    transition: ease 0.9s;
+    transform: translateY(100px);
+    animation: quateMoove ease 0.9s forwards;
+}
+@keyframes quateMoove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+form{
+    width: 427px;
+    height: 392px;
+    
+}
+input{
+    height: 50px;
+    padding-left: 10px;
+}
+textarea{
+    width: 395px;
+    height: 90px;
+}
+#sec6{
+    display: none;
+    opacity: 1;
+    transition: ease 0.9s;
+    transform: translateY(90px);
+    animation-name: sixMoove ease 0.9s forwards;
+}
+@keyframes sixMoove{
+    to {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+.temoigne{
+    background: url(images/fond.jpg);
+    background-size: cover;
+    height: 400px;
+}
+.carous{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #637185;
+}
+i{
+    color: white;
+}
+.profil-image{
+    position: absolute;
+    z-index: 1000;
+    width: 100px;
+    height: 150px;
+    margin-left: -3%;
+    margin-top: 3%;
+}
+.profil-image img{
+    width: 100%;
+    height: 100%;
+}
+.right{
+    position: relative;
+}
+.sponsores{
+    width: 100%;
+    height: 200px;
+}
+.sec-blog{
+    background: #F2F6F9;
+    height: 850.3599853515625px;
+}
+.blog{
+    width: 25%;
+    background: white;
+    height:558px ;
+}
+.blog .img-fluid{
+    width: 344px;
+    height: 344px;
+}
+.blog img{
+    width: 100%;
+    height: 100%;
+}
+.blog h5{
+    color: #021738;
+}
+footer {
+    background: #021738;
+}
+
+ul li{
+    list-style-type: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 240px;
+}
+.logo-footer {
+    width: 291px;
+    height: 32px;
+}
+.logo-footer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*ASSOCIATIONS*/
+.hero{
+    background: url(images/hero1.jpg);
+    background-size: cover;
+    height: 370px;
+    margin-top: 70px;
+}
+.sec-activites{
+    width: 100%;
+}
+.grid-activites{
+    width: 70%;
+    margin: 0 auto;
+}
+.back{
+    width: 366px;
+    height: 320px;
+}
+
+/*EVENEMENTS*/
+#nav-evenement a {
+    color: black;
+}
+
+#links li{
+    list-style-type: none;
+}
+#links a{
+    color: black;
+    text-decoration: none;
+    background: #f2f6f9;
+}
+#links a:hover{
+    background: red;
+    color: white;
+    transition: ease 0.3s;
+}
+#sec-evements{
+    width: 75%;
+}
+.reseau{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: red;
+}
+@media (max-width: 800px){
+    .navbar{
+        height: auto;
+        padding-left: 3%;
+    }
+    .collapse{
+        margin-left: 0%;
+    }
+    .sec-blog{
+        height: auto;
+    }
+    .blog{
+        width: 95%;
+    }
+    
+}
+@media (max-width:400px){
+    .logo{
+        width: 201px;
+        height: 25px;
+    }
+}
