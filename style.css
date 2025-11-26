@@ -320,3 +320,100 @@ ul li{
         height: 25px;
     }
 }
+
+/*Partie evenement */
+.btn-secondary {
+    background-color: #f2f6f9 !important;
+    color: #021738 !important;
+    border: 1px solid #ddd;
+}
+
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    min-width: 120px; 
+}
+
+
+@media (max-width: 576px) {
+    .btn-small {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .btn-small {
+        padding: 6px 11px;
+        font-size: 13px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .btn-small {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+}
+
+
+.btn-danger {
+    background-color: red !important;
+    color: white !important;
+}
+
+/* fin partie evenement */
+
+
+/* Partie Nos Actualites */
+
+.card-hover .card-img-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-hover .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card-hover:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+
+.badge-date {
+    bottom: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.card-hover .card-body {
+    transition: transform 0.3s ease;
+}
+
+.card-hover:hover .card-body {
+    transform: translateY(-5px);
+}
+
+.card-link-red {
+    color: red;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.card-link-red:hover {
+    color: darkred;
+    text-decoration: none;
+}
+
+
+/* fin partie nos actualite */
