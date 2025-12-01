@@ -7,15 +7,24 @@ body{
     overflow-x: hidden;
     width: 100%;
 }
+section{
+    overflow-x: hidden;
+}
+/* HEADER */
 .navbar{
     width: 100%;
     height: 75px;
     background: black;
-    padding-left: 15%;
+    
 }
+
 .logo {
     width: 291px;
     height: 32px;
+    margin-left: 10%;
+}
+.collapse{
+    margin-left: 10%;
 }
 .logo img{
     width: 100%;
@@ -24,15 +33,19 @@ body{
 }
 ul .nav-link{
     color: white;
-
 }
+ul .nav-link:hover{
+    color: red;
+}
+/* FIN HEADER */
+/* HERO */
 .bannier{
     width: 100%;
     height: 841px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/banniere.jpg);
     background-size: cover;
     transition: all 0.5s ease;
-
+    overflow-x: hidden;
 }
 .fade-in {
     opacity: 0;
@@ -46,35 +59,41 @@ ul .nav-link{
         transform: translateY(0);
     }
 }
-.sec-about{
-    width: 100%;
-    height: 741px;
-    background: #F2F6F9;
-    margin-top: 100px;
+.bi-play-circle-fill{
+    color: black;
+    font-size: 35px;
 }
-.les-box{
-    margin: 0% 10% 0% 10%;
-}
+/* FIN HERO */
+
+/* SECTION1 */
 #sec1{
+    height: 400px;
+    background-color: #021738;
     display: none;
-    transition: ease 0.5s;
+    transition: ease 3s;
     transform: translateY(100px);
-    animation: secMove 0.5s ease forwards;
+    animation: secMove 3s ease forwards;
     opacity: 0;
-    
 }
+.card1{
+    height: 300px;
+}
+
+/* ANIMATION */
 @keyframes secMove {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+/* FIN SECTION 1 */
+
+/* SECTION 2 ET 3*/
 #sec2, #sec3{
     opacity: 0;
-    transition: 0.9s;
+    transition: 3s;
     transform: translateY(70px);
-    animation: secondMove ease 0.9s forwards;
-    margin-bottom: 100px;
+    animation: secondMove ease 3s forwards;
 }
 @keyframes secondMove{
     to {
@@ -82,9 +101,27 @@ ul .nav-link{
         transform: translateY(0);
     }
 }
+#tresor{
+    width:306px;
+}
+ 
+/* FIN SECTION 2 ET 3 */
+
+/* SECTION 4 */
+.sec-about{
+    width: 100%;
+    height: 700px;
+    background: #F2F6F9;
+    margin-top: 100px;
+}
+
+.box1{
+    height: 30px;
+
+}
 .box1 .image{
     width: 350px;
-    height: 250px;
+    height: 300px;
 }
 .box1 .image img{
     width: 100%;
@@ -92,16 +129,33 @@ ul .nav-link{
     object-fit: cover;
 }
 .box-body{
+    display: flex;
     width: 300px;
     height: 200px;
     background-color: white;
-    border: 1px solid black;
    margin-left: 2%;
     position: absolute;
     text-align: center;
-    margin-top: -30px;
+    margin-top: 180px ;
 }
 
+
+#sec4{
+    display: none;
+    opacity: 0;
+    transition: ease 3s ;
+    transform: translateY(90px);
+    animation: thirtyMoove ease 3s forwards;
+}
+@keyframes thirtyMoove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* FIN SECTION 4 */
+
+/* SECTION 5 */
 .box2{
     height: 200px;
 }
@@ -114,29 +168,6 @@ ul .nav-link{
     height: 100%;
     object-fit: cover;
 }
-.rectangle-image{
-    width: 847px;
-    height: 673px;
-}
-.rectangle-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-#sec4{
-    display: none;
-    opacity: 0;
-    transition: ease 0.9s ;
-    transform: translateY(80px);
-    animation: thirtyMoove ease 0.9s forwards;
-}
-@keyframes thirtyMoove {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 #sec5{
     display: none;
     opacity: 0;
@@ -150,17 +181,34 @@ ul .nav-link{
         transform: translateY(0);
     }
 }
+.bi-facebook, .bi-wifi, .bi-linkedin, .bi-instagram{
+    color: rgb(0, 0, 68);
+    font-size: 20px;
+}
+/* FIN SECTION 5 */
+
+/* SEC 6 */
+.rectangle-image{
+    width: 847px;
+    height: 673px;
+    margin-bottom: 100px;
+}
+.rectangle-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 form{
-    width: 427px;
+    width: 60%;
     height: 392px;
-    
 }
 input{
+    width: 55%;
     height: 50px;
     padding-left: 10px;
 }
 textarea{
-    width: 395px;
+    width: 53.5%;
     height: 90px;
 }
 #sec6{
@@ -211,7 +259,7 @@ i{
 }
 .sec-blog{
     background: #F2F6F9;
-    height: 850.3599853515625px;
+    height: auto;
 }
 .blog{
     width: 25%;
@@ -229,6 +277,10 @@ i{
 .blog h5{
     color: #021738;
 }
+
+/* FIN SEC 6 */
+
+/* PIED DE PAGE */
 footer {
     background: #021738;
 }
@@ -251,6 +303,8 @@ ul li{
     height: 100%;
     object-fit: cover;
 }
+/* FIN DU PIED DE PAGE */
+
 
 /*ASSOCIATIONS*/
 .hero{
@@ -270,35 +324,13 @@ ul li{
     width: 366px;
     height: 320px;
 }
-
-/*EVENEMENTS*/
-#nav-evenement a {
-    color: black;
-}
-
-#links li{
-    list-style-type: none;
-}
-#links a{
-    color: black;
-    text-decoration: none;
-    background: #f2f6f9;
-}
-#links a:hover{
-    background: red;
-    color: white;
-    transition: ease 0.3s;
-}
-#sec-evements{
-    width: 75%;
-}
 .reseau{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background: red;
 }
-@media (max-width: 800px){
+@media (max-width: 768px) and (min-width:319px){  /*TABLETTE*/
     .navbar{
         height: auto;
         padding-left: 3%;
@@ -306,18 +338,91 @@ ul li{
     .collapse{
         margin-left: 0%;
     }
-    .sec-blog{
+    .sec-blog, #sec1, .sec-about, .sponsores, form{
         height: auto;
     }
     .blog{
         width: 95%;
     }
+    #btn-nav{
+        width: 150px;
+    }
     
+    .box1{
+        margin-bottom: 280px;
+    }
+    
+    #sec2{
+        display: none;
+    }
+    #sec6{
+        display: none;
+        height: auto;
+    }
+    .rectangle-image{
+    width: 347px;
+    height: 473px;
+    margin-bottom: 300px;
+    }
+    input{
+        width: 200px;
+    }
+    .box-body{
+        display: none;
+    }
 }
-@media (max-width:400px){
+@media (max-width:425px){   /*MOBILE*/
     .logo{
         width: 201px;
         height: 25px;
+    }
+    #btn-nav{
+        width: 150px;
+    }
+    #sec1, .sec-about, #sec5, .navbar, .sponsores{
+        height: auto;
+    }
+    .box-body{
+        display: none;
+    }
+    #sec2{
+        display: none;
+        width: 90%;
+        overflow-x: hidden;
+    }
+    #sec6{
+        display: none;
+        height: auto;
+    }
+    .rectangle-image{
+        margin-bottom: 30px;
+    }
+    form{
+        height: auto;
+    }
+    .box1{
+        margin-bottom: 250px;
+    }
+    .box1 .image{
+    width: 280px;
+    height: 250px;
+    }
+    .sec-blog{
+        height: auto;
+    }
+    form{
+    width: 100%;
+    height: auto;
+    }
+    input{
+        width: 380px;
+    }
+    textarea{
+        height: 150px;
+        width: 380px;
+    }
+    .temoigne{
+        margin-bottom: 100px;
     }
 }
 
