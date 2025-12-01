@@ -1,7 +1,7 @@
 
 window.addEventListener('scroll', () =>{
     const sec1 = document.querySelector('#sec1')
-    if(window.scrollY > 400){
+    if(window.scrollY > 200){
         sec1.style.display = 'flex'
     }else{
         sec1.style.display = 'none'
@@ -10,7 +10,7 @@ window.addEventListener('scroll', () =>{
 })
 window.addEventListener('scroll',() => {
     const sec2 = document.querySelector('#sec2')
-    if(window.scrollY > 800){
+    if(window.scrollY > 450){
         sec2.style.display = 'flex'
     } else{
         sec2.style.display = 'none'
@@ -19,7 +19,7 @@ window.addEventListener('scroll',() => {
 
 window.addEventListener('scroll', () =>{
     const sec3 = document.querySelector('#sec3')
-    if(window.scrollY > 800){
+    if(window.scrollY > 450){
         sec3.style.display = 'flex'
     } else{
         sec3.style.display = 'none'
@@ -27,7 +27,7 @@ window.addEventListener('scroll', () =>{
 })
 window.addEventListener('scroll', () =>{
     const sec4 = document.querySelector('#sec4')
-    if(window.scrollY > 1500){
+    if(window.scrollY > 1300){
         sec4.style.display = 'flex'
     } else{
         sec4.style.display = 'none'
@@ -36,7 +36,7 @@ window.addEventListener('scroll', () =>{
 
 window.addEventListener('scroll', () =>{
     const sec5 = document.querySelector('#sec5')
-    if(window.scrollY > 2300){
+    if(window.scrollY > 1900){
         sec5.style.display = 'flex'
     } else {
         sec5.style.display = 'none'
